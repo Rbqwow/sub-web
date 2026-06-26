@@ -8,7 +8,8 @@ Vue 2.7 + Vite 8 SPA with Element UI. Keep changes small, follow existing patter
 - Build tool: Vite 8
 - UI: Element UI 2
 - Router: Vue Router 3 (history mode, base from `import.meta.env.BASE_URL`)
-- Node: 24.x
+- Node: 22.x ~ 24.x
+- Yarn: 1.22.22 (locked via `packageManager`)
 - No automated tests currently
 
 ## Commands

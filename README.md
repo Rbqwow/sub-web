@@ -2,7 +2,7 @@
 
 ![Vue](https://img.shields.io/badge/Vue-2.7.x-brightgreen.svg)
 ![Vite](https://img.shields.io/badge/Vite-8.x-646CFF.svg)
-![Node](https://img.shields.io/badge/Node-24.x-green.svg)
+![Node](https://img.shields.io/badge/Node-22--24-green.svg)
 ![License](https://img.shields.io/badge/License-MIT-blue.svg)
 ![Docker](https://img.shields.io/badge/Docker-Ready-blue.svg)
 
@@ -46,8 +46,8 @@ yarn dev
 
 ## 📦 环境要求
 
-- **Node.js**: 24.x
-- **Yarn**: 1.22+
+- **Node.js**: 22.x ~ 24.x
+- **Yarn**: 1.22.22（项目已通过 `packageManager` 锁定）
 - **Docker**: 20.10+（可选）
 
 ## 🛠️ 常用命令
