@@ -28,7 +28,7 @@
               <div v-if="advanced === '2'">
                 <el-form-item label="后端地址:">
                   <el-autocomplete style="width: 100%" v-model="form.customBackend" :fetch-suggestions="backendSearch"
-                    placeholder="动动小手，（建议）自行搭建后端服务。例：http://127.0.0.1:25500/sub?">
+                    :placeholder="backendPlaceholder">
                     <el-button slot="append" @click="gotoGayhub" icon="el-icon-link">前往项目仓库</el-button>
                   </el-autocomplete>
                 </el-form-item>
@@ -240,7 +240,10 @@ export default {
       // 配置选项
       options: {
         clientTypes: CLIENT_TYPES,
-        backendOptions: [{ value: "http://127.0.0.1:25500/sub?" }],
+        backendOptions: [
+          { value: CONSTANTS.DEFAULT_BACKEND },
+          { value: "http://127.0.0.1:25500/sub?" }
+        ],
         remoteConfig: REMOTE_CONFIGS
       },
 
@@ -277,6 +280,10 @@ export default {
 
     canImportClash() {
       return this.customSubUrl.length > 0;
+    },
+
+    backendPlaceholder() {
+      return `后端转换服务地址，例如：${CONSTANTS.DEFAULT_BACKEND}`;
     },
 
     processedSubUrl() {
