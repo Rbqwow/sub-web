@@ -1,6 +1,23 @@
 // 远程配置选项
 export const REMOTE_CONFIGS = [
   {
+    label: "Odayakana",
+    options: [
+      {
+        label: "Lite",
+        value: "https://raw.rbqwow.icu/SubConverter/SubConverter_Lite.ini?token=whatcanisaysubconverter"
+      },
+      {
+        label: "Mihomo (Deprecated)",
+        value: "https://raw.rbqwow.icu/SubConverter/SubConverter_Mihomo.ini?token=whatcanisaysubconverter"
+      },
+      {
+        label: "Mihomo (No Expand) (Deprecated)",
+        value: "https://raw.rbqwow.icu/SubConverter/SubConverter_Mihomo_No_Expand.ini?token=whatcanisaysubconverter"
+      }
+    ]
+  },
+  {
     label: "universal",
     options: [
       {
